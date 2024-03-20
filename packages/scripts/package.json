@@ -1,0 +1,72 @@
+{
+  "name": "@gm-react-app/scripts",
+  "version": "3.5.0-beta.0",
+  "description": "",
+  "author": "liyatang <liyatang@qq.com>",
+  "homepage": "https://github.com/gmfe/gm-react-app/tree/master/packages/scripts#readme",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmfe/gm-react-app.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bin": {
+    "gm-react-app-scripts": "./bin/scripts.js",
+    "gras": "./bin/scripts.js"
+  },
+  "bugs": {
+    "url": "https://github.com/gmfe/gm-react-app/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.11.1",
+    "@commitlint/cli": "^9.1.1",
+    "@gm-react-app/commitlint-gm-react-app": "^3.5.0-beta.0",
+    "@gm-react-app/template": "^3.5.0-beta.0",
+    "@hot-loader/react-dom": "^16.11.0",
+    "@svgr/webpack": "^5.3.1",
+    "@types/react": "^16.9.32",
+    "babel-loader": "^8.0.6",
+    "babel-preset-gm-react-app": "^3.5.0-beta.0",
+    "case-sensitive-paths-webpack-plugin": "^2.3.0",
+    "cross-spawn": "^7.0.2",
+    "css-loader": "^3.5.1",
+    "eslint-plugin-gm-react-app": "^3.5.0-beta.0",
+    "file-loader": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^4.1.3",
+    "fs": "0.0.2",
+    "fs-extra": "^9.0.0",
+    "html-webpack-plugin": "^4.0.4",
+    "husky": "^4.2.3",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.1.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "react-hot-loader": "^4.12.19",
+    "shelljs": "^0.8.3",
+    "style-loader": "^1.1.3",
+    "stylelint": "13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "terser-webpack-plugin": "^2.1.0",
+    "thread-loader": "^2.1.3",
+    "ts-config-gm-react-app": "^3.5.0-beta.0",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^3.8.3",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.11",
+    "webpackbar": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "autlaudantium",
+  "aliasName": "gm-react-app",
+  "clientName": "gm-react-app",
+  "description": "参考资料",
+  "version": "1.0.0",
+  "main": "webpack.config.backup.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LilaHahn/autlaudantium.git"
+  },
+  "author": "VitoCremin",
+  "license": "ISC",
+  "scripts": {
+    "publish-latest": "lerna publish --force-publish --registry https://registry.npmjs.org/",
+    "publish-beta": "lerna publish --force-publish --dist-tag beta --preid beta --registry https://registry.npmjs.org/",
+    "start": "gras start",
+    "build:test": "gras test",
+    "build:prod": "gras build"
+  },
+  "lint-staged": {
+    "./src/**/*.{js,json}": [
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "./src/**/*.{less,css}": [
+      "stylelint --cache --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "browserslist": {
+    "production": [
+      "iOS >= 8",
+      "Android >= 5.0"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@gm-react-app/commitlint-gm-react-app"
+    ]
+  },
+  "dependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@gm-react-app/commitlint-gm-react-app": "^3.3.2-beta.5",
+    "@gm-react-app/scripts": "^3.0.5",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-loadable": "^5.5.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "ts-config-gm-react-app": "^3.2.4"
+  },
+  "devDependencies": {
+    "lerna": "^3.19.0"
+  }
+}
